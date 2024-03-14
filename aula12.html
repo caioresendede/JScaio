@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-</body>
+<html>
+    <body>
+        <h2>JavaScript addEventListener()</h2>
+        <p>Esse exemplo usa o método addEventListener() para adicionar um evento clicavel em um botão.</p>
+        <button id="myBtn"> Clique aqui.</button>
+        <script>
+            document.getElementById("myBtn").addEventListener("click",
+            function() {
+                alert("Alô mundo!");
+            });
+        </script>
+    </body>
 </html>
