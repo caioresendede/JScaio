@@ -20,8 +20,18 @@ function add() {
     newTask.appendChild(btRemove);
 
 
-    const btCheck = document.createElement("button");
-    btCheck.innerHTML = "Check";
-    document.getElementById("btCheck").addEventListener("click", function(){
-        document.getElementById("newH2").classList.toggle("estilizado");});
-}
+    const inputCheck = document.createElement("input");
+    inputCheck.innerHTML = "Check";
+    inputCheck.type = "checkbox";
+    newTask.appendChild(inputCheck);
+    inputCheck.addEventListener("click", function(){  
+        if(inputCheck.checked==true){
+            newH2.style.textDecorationLine = "line-through";
+           
+         } else {
+            newH2.style.textDecorationLine = "none";
+         }
+
+       })
+    
+    }
