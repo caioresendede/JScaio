@@ -1,6 +1,6 @@
 #task {
     position:absolute;
-    top: 50px; left: 38%;
+    top: 80px; left: 38%;
     width: 200px; height: 35px;
     border-radius: 10px;
     text-align: center;
@@ -9,7 +9,7 @@
 #addbt{
 
     position: absolute;
-        top: 51px; left: 55%;
+        top: 81px; left: 55%;
         width: 80px; height: 40px;
         border-radius: 10px;
         background-color: rgb(0, 0, 0) ;
@@ -17,21 +17,21 @@
 
     button {
         position: absolute;
-        top: 51px; left: 75%;
+        top: 32px; left: 84%;
         width: 80px; height: 40px;
         border-radius: 10px;
         background-color: rgb(189, 15, 15) ;
         color: white; }
 
 body {
-    font-family: monospace;
+    font-family: Arial, sans-serif;
     background-color: rgb(201, 195, 165);
 }
 
 div {
     position: relative;
-    top: 100px; left: 30%;
-    height: 70px; width: 500px;
+    top: 130px; left: 25%;
+    height: 100px; width: 600px;
     border-radius: 10px;
     font-size: 20px;
     text-align: center;
@@ -42,4 +42,35 @@ div {
 
 h2.estilizado {
     text-decoration: line-through;
+}
+
+.menu {
+    background-color: rgb(119, 114, 65);
+    padding: 20px 0;
+    position: absolute;
+    top: 0px; left: 0px;
+    border-radius: 0;
+    width: 1366px; height: 30px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: #ccc;
 }

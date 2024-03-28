@@ -1,0 +1,44 @@
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(lis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    background-color: rgb(119, 114, 65);
+    padding: 20px 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: #ccc;
+}
+
+#sobre {
+    position: absolute;
+    top: 40%; left: 42%; 
+    width: 200px; height: 200px;
+    background-color: rgb(119, 114, 65);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
