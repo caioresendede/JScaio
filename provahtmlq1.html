@@ -1,0 +1,99 @@
+
+
+<html>
+<body>
+<div class="menu">
+<img src="logo.png" alt="" width="270px">
+</div>
+<div class="container">
+<div id="titulo">
+<h3>To Do <br> List <br> </h3>
+<button> <a href="#data"> Data: </a></button>
+<button id="bt1"> <a href="#texto">Crie a sua aqui</a></button>
+</div>
+<h3> Quinta-feira </h3>
+</div>
+<div class="parte-lista">
+<div class="container2">
+<h1 class="subtitulo"> Adicionar Elementos na Lista</h1>
+<input type="text" class=”nome” placeholder="Seu nome">
+<input type="text" placeholder="Digite uma tarefa">
+<input type="text" class=”nome” placeholder="Digite seu sobrenome" value="Resende">
+<h3> Data: </h3>
+<button onclick="adicionar()"> + </button>
+<button onclick="remover()"> - </button>
+</div>
+<div id="tarefas">
+</div>
+</div>
+
+    <script>
+        //questao1 - Troque o tamanho e a fonte do terceiro <h3>. Qualquer tamanho e fonte. (1,0)
+        const h3 = document.getElementsByTagName("h3")[2];
+        h3.style.fontSize = "30px";
+        h3.style.fontFamily = "Arial";
+
+        const h1 = document.getElementsByClassName("subtitulo")[0];
+        h1.innerHTML = "Adicionar tarefas na lista";
+        //questao2 - Altere, através da classe, o texto da tag <h1> para Adicionar Tarefas na Lista” e o texto da
+        //segunda tag <h3> para “Teste!”. (1,0)
+
+        //const segundoh3 = document.getElementsByTagName("h3")[1];
+        //segundoh3.innerHTML = "Teste!"
+
+        
+        document.getElementsByTagName("h3")[1].innerHTML="Teste!";
+
+        //questao3 - Pegue a tarefa digitada na caixa <input> e insira na <div> container2. (1,0)
+
+        //const tarefa = document.getElementsByTagName("input")[1];
+        //const container2 = document.getElementsByClassName("container2")[0];
+        //container2.innerHTML = tarefa.value; ou ->
+        
+        //document.getElementsByClassName("container2")[0].innerHTML = document.getElementsByTagName("input")[1].value;
+        
+
+
+        //questão4- Crie um parágrafo com a tag <p> com o seu nome dentro e insira na <div> container. (1,0)
+
+        const newparagrafo = document.createElement("p");
+        newparagrafo.innerText = "caio";                                                                                                        
+        document.getElementsByClassName("container")[0].appendChild(newparagrafo);
+
+        //questão5 - 5 - Crie um botão com o texto “Cancelar”, adicione a uma nova div. Insira a div criada dentro da
+        //div tarefas.
+
+            
+
+        const newbotao = document.createElement("button");
+        newbotao.innerHTML = "Cancelar";
+        const newdiv = document.createElement("div");
+            newdiv.appendChild(newbotao);
+            document.getElementById("tarefas").appendChild(newdiv);
+
+        //questão6 - Adicione um evento ao botão remover para remover a <div> tarefas ao clicá-lo.
+
+            const btremover = document.getElementsByTagName("button")[3];
+            btremover.addEventListener ("click", function(){
+                document.getElementById("tarefas").remove();});
+
+        //questão7 - Crie uma nova imagem com a imagem “pen.jpg” e insira no body do site.
+        const imagem = document.createElement("img");
+        imagem.src = "pen.jpg";
+        document.body.appendChild(imagem);
+        
+        //questão8 - Pegue o sobrenome digitado pelo usuário e insira dentro da caixinha <input> nome.
+        
+        const vsobrenome = document.getElementsByTagName("input")[2];
+        document.getElementsByTagName("input")[0].value = vsobrenome.value;
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
