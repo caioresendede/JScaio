@@ -12,16 +12,27 @@
     retorna o resultado para uma variavel</h4>
 
 
+    <label for="">Insira o 1° número</label>
+    <input type="text" id="n1"> <br>
+    <label for="">Insira o 2° número</label>
+    <input type="text" id="n2">
+    <button onclick="calcula()"> Enviar </button>
 
 
-    <p id="multiplicacao">  </p>
+    <p id="resultado">  </p>
 
     <script>
-        let x = multiplica(4,5);
-        document.getElementById("multiplicacao").innerHTML = x;
+    function calcula(){
+        
+    let x = multiplica(n1, n2);
+    let n1 = document.getElementById("n1").value;
+    let n2 = document.getElementById("n2").value;
+    document.getElementById("resultado").innerHTML = x;
+
 
         function multiplica(a, b){
             return a*b;}
+        }
 
     </script>
 
