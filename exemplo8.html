@@ -6,26 +6,25 @@
     <title>Exemplo 6</title>
 </head>
 <body style="font-size: x-large;">
-    <h1>Exemplo 7</h1>
+    <h1>Exemplo 8</h1>
     <h2>Funções</h2>
 
     <p><b>Parâmetro Rest(...)</b></p>  
-    <p id="resultado" style="font-weight: bold;"></p>
+    <p id="demo" style="font-weight: bold;"></p>
     
 
 
 
 
     <script>
-        function findMax(...args){
-            let max=-Infinity;
+        function sumAll(...args){
+            let sum=0;
             for (let i=0; i<args.length; i++) {
-                if (args[i]>max) {
-                    max = args[i];
-                }}
-            return max; 
+                sum+=args[i];
+                }
+            return sum; 
         } 
-        document.getElementById("resultado").innerHTML = findMax(6645,5466,5153);
+        document.getElementById("demo").innerHTML = sumAll(6,6,6,6);
     </script>
 
 
